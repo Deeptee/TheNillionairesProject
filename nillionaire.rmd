@@ -1,0 +1,18 @@
+---
+title: "The Nillionaires"
+author: "Dipti Gautam"
+date: "October 6, 2018"
+output: pdf_document
+---
+#Importing the data and having a look at it.
+```{r}
+dummydata<- read.csv("/media/dipti/Educational/The Nillionaires/train.csv")
+head(dummydata)
+```
+
+#Looking at the plots.
+```{r}
+library(ggplot2)
+g <- ggplot(dummydata, aes(x = location, y = standing))
+```
+
